@@ -1,2 +1,2 @@
 # varnish_api_cache_engine
-API Cache Solution with Varnish
+API Cache Solution with Varnish 4.0
