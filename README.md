@@ -33,7 +33,7 @@ We can access the cached API’s with host name https://api.example.com from Mob
 Eg: VARNISH_STORAGE="malloc,1G"
 
 * Find the default.vcl file for varnish ( https://github.com/shafeequeaslam/varnish_api_cache_engine/blob/master/default.vcl )
-https://github.com/shafeequeaslam/varnish_api_cache_engine/blob/master/default.vcl
+
 * All the API’s are cached for 5 Mins in cloudfront, As we are passing max-age=300 from varnish.
 
 * We can add more API’s which needed to be cached in default.vcl file and define particular cache ttl.
