@@ -21,5 +21,13 @@ We can access the cached API’s with host name https://api.example.com from Mob
 * Even Though Cloudfront will cache all API’s for 5 mins as configured in Cloudfront to accept max-age cache header from varnish and max-age is set to 5 mins in default.vcl file of varnish 
 
 * In Cloudfront’s behaviour it is configured to
-            - Redirect HTTP to HTTPS and
-            - Whitelist Host and User-Agent headers
+            Redirect HTTP to HTTPS and
+            Whitelist Host and User-Agent headers
+#### Varnish Server
+
+* Varnish 4.0 is installed and configured with the following configuration file.
+
+* As the backend (https://example.com) uses SSL and it redirects HTTP to HTTPS, and Varnish does not support SSL in both end, we added the backend IP and domain name in hosts file in order to get API responses through port 80 from backend.
+
+* We can configure How much RAM Varnish can use in /etc/varnish/varnish.params with VARNISH_STORAGE variable.
+Eg: VARNISH_STORAGE="malloc,1G"
