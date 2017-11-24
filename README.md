@@ -32,7 +32,7 @@ We can access the cached API’s with host name https://api.example.com from Mob
 * We can configure How much RAM Varnish can use in /etc/varnish/varnish.params with VARNISH_STORAGE variable.
 Eg: VARNISH_STORAGE="malloc,1G"
 
-* Find the default.vcl file for varnish ( https://github.com/shafeequeaslam/varnish_api_cache_engine/blob/master/default.vcl )
+* Find the default.vcl file for varnish -  https://github.com/shafeequeaslam/varnish_api_cache_engine/blob/master/default.vcl
 
 * All the API’s are cached for 5 Mins in cloudfront, As we are passing max-age=300 from varnish.
 
