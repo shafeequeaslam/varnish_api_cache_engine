@@ -21,5 +21,5 @@ We can access the cached API’s with host name https://api.example.com from Mob
 * Even Though Cloudfront will cache all API’s for 5 mins as configured in Cloudfront to accept max-age cache header from varnish and max-age is set to 5 mins in default.vcl file of varnish 
 
 * In Cloudfront’s behaviour it is configured to 
-            **Redirect HTTP to HTTPS and
-             Whitelist Host and User-Agent headers
+            * Redirect HTTP to HTTPS and
+            * Whitelist Host and User-Agent headers
