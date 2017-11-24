@@ -11,7 +11,7 @@ API Cache Solution with Varnish 4.0
 #### Mobile App (or) Browser
 
 
-We can access the cached API’s with host name https://api.example.com from Mobile app or any other client application.
+* We can access the cached API’s with host name https://api.example.com from Mobile app or any other client application.
 
 
 #### CloudFront
@@ -35,5 +35,10 @@ Eg: VARNISH_STORAGE="malloc,1G"
 * Find the default.vcl file for varnish -  https://github.com/shafeequeaslam/varnish_api_cache_engine/blob/master/default.vcl
 
 * All the API’s are cached for 5 Mins in cloudfront, As we are passing max-age=300 from varnish.
+
+#### API Backend
+
+* API Backend should be configured to serve on 80 (HTTP). HTTP to HTTPS redirection should be there in Cloudfront/ Cloudflare only. 
+
 
 * We can add more API’s which needed to be cached in default.vcl file and define particular cache ttl.
